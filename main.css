@@ -78,7 +78,7 @@ body {
 
 .backimg {
     background-color: var(--h_dark);
-    background-size: 100%;
+    background-size: 100vmax;
     font-size: 0;
     background-position: center;
     background-repeat: no-repeat;
