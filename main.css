@@ -71,7 +71,7 @@ body {
 }
 
 #main_bodycontainer {
-    background-color: var(--h_light);
+    background-color: var(--h_dark);
     display: grid;
     grid-template:
     "banner banner"
@@ -358,38 +358,47 @@ div.icon.profile {
 }
 
 #mainbodycontainer-gallery {
-    background-color: var(--h_light);
+    background-color: var(--h_dark);
+}
+
+img#Display {
+    width: 100%;
+    border-radius: 20px;
 }
 
 .gallery.images {
-    background-color: var(--h_light);
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-}
-
-.gallery.images li {
-    background-color: var(--h_dark);
-    border-radius: 20px;
-    height: 100px;
-    width: 100px;
-    margin: 15px;
+    overflow-y: scroll;
+    background-color: var(--h_light);
 }
 
 .gallery.images img {
     background-color: var(--h_dark);
-    border: 5px solid var(--h_dark);
     height: 100px;
     width: 100px;
-    position: absolute;
+    border: 5px solid var(--h_dark);
+    position: sticky;
     border-radius: 20px;
     object-fit: cover;
-    transition: transform 0.2s;
+    transition: width 0.2s, height 0.2s, margin 0.2s;
+    margin: 15px;
 }
 
-.gallery.images img:active {
-    transform: scale(105%);
+.gallery.images input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.gallery.images input[type="radio"]:checked + img {
+    height: 110px;
+    width: 110px;
+    margin: 10px;
 }
 
 @media screen and (min-width: 800px) {
