@@ -378,14 +378,14 @@ img#Display {
 
 .gallery.images img {
     background-color: var(--h_dark);
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     border: 5px solid var(--h_dark);
     position: sticky;
     border-radius: 20px;
     object-fit: cover;
     transition: width 0.2s, height 0.2s, margin 0.2s;
-    margin: 15px;
+    margin: 10px;
 }
 
 .gallery.images input[type="radio"] {
@@ -396,9 +396,9 @@ img#Display {
 }
 
 .gallery.images input[type="radio"]:checked + img {
-    height: 110px;
-    width: 110px;
-    margin: 10px;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
 }
 
 @media screen and (min-width: 800px) {
