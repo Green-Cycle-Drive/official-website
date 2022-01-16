@@ -150,6 +150,10 @@ a:hover {
     padding: 10px 20px 15px 20px;
 }
 
+.txt p {
+    margin-bottom: auto;
+}
+
 .abt.content {
     grid-area: about;
     background-color: var(--h_light);
