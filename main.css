@@ -371,7 +371,7 @@ img#Display {
 }
 
 .gallery.images {
-    height: 400px;
+    height: 350px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;

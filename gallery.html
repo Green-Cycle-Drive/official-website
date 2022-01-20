@@ -28,86 +28,64 @@
                 <h2>Gallery</h2>
             </div>
 
-            <img src="Images/PCU/PCU10-Karama.jpg" alt="AltText" class="gallery" id="Display">
+            <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText" class="gallery" id="Display">
             
             <div class="header">
                 <h2>Images</h2>
             </div>
             <ul class="images gallery">
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
-                    <label>
-                        <input type="radio" name="gallery">
-                        <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
-                    </label>
+                <label>
+                    <input type="radio" name="gallery" checked='true'>
+                    <img src="Images/PCU/PCU9-Karama.jpg" alt="AltText">
+                </label>
+                <label>
+                    <input type="radio" name="gallery">
+                    <img src="Images\PCU\PCU6-Mankhool.jpg" alt="AltText">
+                </label>
+                <label>
+                    <input type="radio" name="gallery">
+                    <img src="Images\PCU\PCU10-Karama.jpg" alt="AltText">
+                </label>
+                <label>
+                    <input type="radio" name="gallery">
+                    <img src="Images\PCU\WhatsApp Image 2021-08-20 at 8.18.47 PM.jpg" alt="AltText">
+                </label>
+                <label>
+                    <input type="radio" name="gallery">
+                    <img src="Images\CTC\Grp-1.jpg" alt="AltText">
+                </label>
+                <label>
+                    <input type="radio" name="gallery">
+                    <img src="Images\CTC\Grp-2.jpg" alt="AltText">
+                </label>
+                <label>
+                    <input type="radio" name="gallery">
+                    <img src="Images\CTC\Grp-3.jpg" alt="AltText">
+                </label>
+                <label>
+                    <input type="radio" name="gallery">
+                    <img src="Images\CTC\Grp-5.jpg" alt="AltText">
+                </label>
+                <label>
+                    <input type="radio" name="gallery">
+                    <img src="Images\CTC\Grp-6.jpg" alt="AltText">
+                </label>
             </ul>
             <footer>This is Footer</footer>
         </div>
     </body>
+    <script>
+        var activeImage;
+        main();
+        function updateImg() {
+            document.getElementById('Display').src = activeImage;
+        }
+        function main() {
+            setTimeout(function onTick() {
+                activeImage = document.querySelector('input[name="gallery"]:checked').nextElementSibling.src;
+                updateImg();
+                main();
+            }, 1);
+        }
+    </script>
 </html>
