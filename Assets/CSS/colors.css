@@ -1,0 +1,8 @@
+/*Color Pallete for the website*/
+:root {
+  --G1: hsl(96, 80%, 40%);
+  --G2: hsl(110, 27%, 17%);
+  --G3: hsl(100, 55%, 26%);
+  --W: hsl(45, 100%, 99%);
+  --B: hsl(0, 100%, 2%);
+}
