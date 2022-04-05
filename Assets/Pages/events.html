@@ -9,15 +9,32 @@
     <link rel="stylesheet" href="../CSS/main.css">
     <link rel="stylesheet" href="../CSS/eventStyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../../jQuery.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".inPageNavigation").on('click', function(event) {
+                    if(this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate(
+                            {scrollTop: $(hash).offset().top},
+                            800, function() {
+                                window.location.hash = hash;
+                            }
+                        );
+                    }
+                });
+            });
+        </script>
 </head>
     <body>
         <header>
-            <a href="#" class="webTitle"><span class="recycleSymbol">♻</span>Green Cycle Drive</a>
+            <a href="#banner" class="webTitle inPageNavigation"><span class="recycleSymbol">♻</span>Green Cycle Drive</a>
             <ul class="nav">
                 <li><a href="../../index.html#banner">Home</a></li>
                 <li><a href="../../index.html#about">About</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#events" class="inPageNavigation">Events</a></li>
+                <li><a href="#contact" class="inPageNavigation">Contact</a></li>
             </ul>
         </header>
 
@@ -33,7 +50,7 @@
                         <div class="imgBx">
                             <img src="../Images/CTC/Grp-4.jpg">
                         </div>
-                        <h4>Clean the Coast</h4>
+                        <h4>Recycling Drive 2.0</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Iste eos quo labore magnam atque harum deserunt blanditiis
@@ -43,13 +60,12 @@
                         <a href="#" class="btn">Sign Up</a>
                     </div>
                 </li>
-
                 <li>
                     <div class="event">
                         <div class="imgBx">
-                            <img src="../Images/PCU/WhatsApp Image 2021-08-20 at 8.18.47 PM.jpg">
+                            <img src="../Images/CTC/Grp-4.jpg">
                         </div>
-                        <h4>Park Cleanup</h4>
+                        <h4>Recycling Drive 2.0</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Iste eos quo labore magnam atque harum deserunt blanditiis
@@ -57,15 +73,44 @@
                             est mollitia aliquam unde, modi laboriosam!
                         </p>
                         <a href="#" class="btn">Sign Up</a>
-                </div>
+                    </div>
                 </li>
-
                 <li>
                     <div class="event">
                         <div class="imgBx">
                             <img src="../Images/CTC/Grp-4.jpg">
                         </div>
-                        <h4>[Cleanup Name]</h4>
+                        <h4>Recycling Drive 2.0</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Iste eos quo labore magnam atque harum deserunt blanditiis
+                            praesentium veritatis voluptas iure molestiae quod fugiat
+                            est mollitia aliquam unde, modi laboriosam!
+                        </p>
+                        <a href="#" class="btn">Sign Up</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="event">
+                        <div class="imgBx">
+                            <img src="../Images/CTC/Grp-4.jpg">
+                        </div>
+                        <h4>Recycling Drive 2.0</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Iste eos quo labore magnam atque harum deserunt blanditiis
+                            praesentium veritatis voluptas iure molestiae quod fugiat
+                            est mollitia aliquam unde, modi laboriosam!
+                        </p>
+                        <a href="#" class="btn">Sign Up</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="event">
+                        <div class="imgBx">
+                            <img src="../Images/CTC/Grp-4.jpg">
+                        </div>
+                        <h4>Recycling Drive 2.0</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Iste eos quo labore magnam atque harum deserunt blanditiis

@@ -1,6 +1,6 @@
 section.eventList {
-  padding: 50px;
-  padding-top: 100px;
+  padding: 20px;
+  padding-top: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,19 +14,19 @@ section.eventList * {
 section.eventList h2 {
   background-color: var(--G3);
   padding: 10px 0;
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
   width: 100%;
 }
 
 .eventsList {
   width: 100%;
-  padding: 10px;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .eventsList li {
-  padding: 20px 5px;
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -34,10 +34,15 @@ section.eventList h2 {
   text-align: center;
 }
 
+.eventsList li:nth-child(odd):last-child {
+  width: 100%;
+}
+
 .event {
   background-color: var(--G3);
   box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.25);
   padding: 30px;
+  min-width: calc(100% - 60px);
 }
 
 .event .imgBx {

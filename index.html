@@ -8,17 +8,34 @@
         <link rel="stylesheet" href="./Assets/CSS/colors.css">
         <link rel="stylesheet" href="./Assets/CSS/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./jQuery.js"></script>
+        <script>
+            $(document).ready(function() {
+                $(".inPageNavigation").on('click', function(event) {
+                    if(this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate(
+                            {scrollTop: $(hash).offset().top},
+                            800, function() {
+                                window.location.hash = hash;
+                            }
+                        );
+                    }
+                });
+            });
+        </script>
     </head>
     <body>
 
         <!--Header / nav bar-->
         <header>
-            <a href="#" class="webTitle"><span class="recycleSymbol">♻</span>Green Cycle Drive</a>
+            <a href="#banner" class="webTitle inPageNavigation"><span class="recycleSymbol">♻</span>Green Cycle Drive</a>
             <ul class="nav">
-                <li><a href="#banner">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#banner" class="inPageNavigation">Home</a></li>
+                <li><a href="#about" class="inPageNavigation">About</a></li>
                 <li><a href="./Assets/Pages/events.html#banner">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="inPageNavigation">Contact</a></li>
             </ul>
         </header>
 
@@ -33,7 +50,7 @@
                     in.
                 </p>
 
-                <a href="./Assets/Pages/events.html#events" class="btn">Upcoming Events</a>
+                <a href="./Assets/Pages/events.html#banner" class="btn">Upcoming Events</a>
             </div>
         </div>
 
