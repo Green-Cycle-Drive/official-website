@@ -200,20 +200,33 @@ section.achievements .content {
   border-radius: 8px;
 }
 
-section.achievements .content * {
+section.achievements .content h2 {
   color: var(--W);
 }
 
 .achievement {
+  background-color: hsl(96, 75%, 35%);
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
   margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .achievement h3 {
   margin-bottom: 10px;
+  color: var(--W);
 }
 
-.achievement p {
+.achievement .description {
+  display: flex;
+}
+
+.achievement .description .text p {
   line-height: 1.8em;
+  color: hsl(108, 100%, 99%);
 }
 
 /*Footer Styles*/
@@ -303,12 +316,12 @@ footer p {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .members li img {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 0.8em);
   margin-bottom: 4px;
   background-position: center;
 }
@@ -342,12 +355,12 @@ footer p {
     padding: 25px;
   }
 
-  section.events {
+  section.achievements {
     margin: -50px 0 0 0;
     padding: 25px 0 12.5px 0;
   }
 
-  section.events .content {
+  section.achievements .content {
     margin: 48px 20px;
     padding: 40px;
   }
