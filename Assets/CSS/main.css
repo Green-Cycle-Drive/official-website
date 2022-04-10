@@ -313,6 +313,7 @@ footer p {
   background-color: var(--G3);
   padding: 5px;
   min-width: 7.5em;
+  max-width: 7.5em;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
