@@ -1,5 +1,5 @@
 * {
-  font-family: "Raleway", "Open Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+  font-family: "Open Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
   margin: 0;
   padding: 0;
@@ -334,11 +334,11 @@ footer p {
 .members li i {
   text-overflow: ellipsis;
   word-wrap: break-word;
-  font-size: 0.8em;
+  font-size: 10px;
 }
 
 .members li i:nth-child(3) {
-  font-size: 1ex;
+  font-size: 50%;
 }
 
 /*Media Queries*/
