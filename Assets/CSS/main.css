@@ -255,9 +255,9 @@ footer p {
 
 .socialMedia {
   display: flex;
-  gap: 20vw;
+  width: 100%;
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
