@@ -283,7 +283,7 @@ footer p {
   border-radius: 14px;
   width: 100%;
   list-style-type: none;
-  height: 8em;
+  height: 10em;
   padding: 1em;
   margin-top: 5px;
   margin-bottom: 20px;
@@ -319,11 +319,16 @@ footer p {
   justify-content: space-evenly;
 }
 
-.members li img {
+.membrImgContainer {
+  overflow: hidden;
   width: 100%;
-  height: calc(100% - 0.8em);
+  height: 100%;
   margin-bottom: 4px;
-  background-position: center;
+}
+
+.members li .membrImgContainer img {
+  width: 100%;
+  border-radius: 0.25em;
 }
 
 .members li i {
