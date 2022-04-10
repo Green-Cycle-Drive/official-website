@@ -335,11 +335,11 @@ footer p {
   overflow-x: hidden;
   overflow-y: hidden;
   word-wrap: break-word;
-  font-size: 1.2ex;
+  font-size: 60%;
 }
 
 .members li i:nth-child(3) {
-  font-size: 0.8ex;
+  font-size: 40%;
 }
 
 /*Media Queries*/
@@ -393,7 +393,7 @@ footer p {
   }
 
   header .webTitle {
-    font-size: 1.1em;
+    font-size: 90%;
     font-weight: 600;
     margin-right: 10px;
   }
